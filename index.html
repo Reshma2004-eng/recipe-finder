@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍳 Interactive Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🍳 Recipe Finder</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Find Delicious Recipes Instantly</h1>
+    <p>Enter ingredients you have & discover amazing dishes</p>
+    <div class="search-box">
+      <input type="text" id="ingredientInput" placeholder="e.g., tomato, onion, garlic, chicken">
+      <button id="searchBtn">Find Recipes</button>
+    </div>
+  </header>
+
+  <!-- Recipe Section -->
+  <main>
+    <h2 class="section-title">✨ Recipe Suggestions</h2>
+    <section id="recipes" class="recipes-container"></section>
+  </main>
+
+  <!-- Modal -->
+  <div id="recipeModal" class="modal">
+    <div class="modal-content animate">
+      <span id="closeModal">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>💡 Made with ❤️ using Spoonacular API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
